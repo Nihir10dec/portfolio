@@ -4,27 +4,27 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const metadataBase = new URL('https://nihir-shah.netlify.app/');
+const metadataBase = new URL('https://nihir-shah.netlify.app');
 
 export const metadata: Metadata = {
   title: "Nihir Shah",
-  description: "Senior Software Engineer at DemandHelm. React JS, Next JS, Tailwind CSS, Node JS",
+  description: "Senior Software Engineer at DemandHelm. React JS, Node JS, AWS",
   authors: [{ name: 'Nihir Shah', url: metadataBase }],
-  keywords: ['Nihir', 'Nihir Shah', 'Nihir Praful Shah', 'DemandHelm', 'Senior Software Engineer', 'React JS'],
+  keywords: ['Nihir', 'Nihir Shah', 'Nihir Praful Shah', 'DemandHelm', 'Senior Software Engineer', 'React JS', 'Node JS', 'Next JS'],
   creator: 'Nihir Shah',
   category: 'Portfolio',
-  icons: '../../public/Nihir.jpg',
+  icons: new URL('/Nihir.jpg', metadataBase),
   twitter: {
     title: 'Nihir Shah',
-    description: "Senior Software Engineer at DemandHelm. React JS, Next JS, Tailwind CSS, Node JS",
+    description: "Senior Software Engineer at DemandHelm. React JS, Node JS, AWS",
     images: {
-      url: new URL('/public/Nihir.jpg', metadataBase), // Resolves to https://your-domain.com/path-to-your-image.jpg
+      url: new URL('/Nihir.jpg', metadataBase), // Resolves to https://your-domain.com/path-to-your-image.jpg
     },
   },
   openGraph: {
     images: [
       {
-        url: new URL('/public/Nihir.jpg', metadataBase), // Resolves to https://your-domain.com/path-to-your-image.jpg
+        url: new URL('/Nihir.jpg', metadataBase), // Resolves to https://your-domain.com/path-to-your-image.jpg
       },
     ],
   },
