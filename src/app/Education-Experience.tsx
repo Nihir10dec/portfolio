@@ -7,7 +7,7 @@ const EducationExperience = () => {
       title: "Jan 2023",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-4xl md:text-2xl font-semibold mb-8">
+          <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
             Senior Software Engineer at <a className="text-blue-500" href="https://www.demandhelm.com" target="_blank">DemandHelm</a>
           </p>
           <ul className="list-disc leading-7 pl-5 space-y-1">
@@ -27,7 +27,7 @@ const EducationExperience = () => {
       title: "Mar 2021 - Dec 2022",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-4xl md:text-2xl font-semibold mb-8">
+          <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
             Software Engineer at <a className="text-blue-500" href="https://www.demandhelm.com" target="_blank">DemandHelm</a>
           </p>
           <ul className="list-disc leading-7 pl-5 space-y-1">
@@ -45,7 +45,7 @@ const EducationExperience = () => {
       title: "Mar 2020 - Feb 2021",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-4xl md:text-2xl font-semibold mb-8">
+          <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
             Post Graduation Diploma in Advanced Computing from <span className="text-blue-500">CDAC</span>
           </p>
           <div className="mb-8">
@@ -59,7 +59,7 @@ const EducationExperience = () => {
       title: "Oct 2018 - Feb 2020",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-4xl md:text-2xl font-semibold mb-8">
+          <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
             Systems Engineer at <a href="https://www.infosys.com/" className="text-blue-500">Infosys</a>
           </p>
           <div className="mb-8">
@@ -74,7 +74,7 @@ const EducationExperience = () => {
       title: "June 2018 - Oct 2018",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-4xl md:text-2xl font-semibold mb-8">
+          <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
             Systems Engineer Trainee at <a href="https://www.infosys.com/" className="text-blue-500">Infosys</a>
           </p>
           <div className="mb-8">
@@ -88,7 +88,7 @@ const EducationExperience = () => {
       title: "June 2014 - Mar 2014",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-4xl md:text-2xl font-semibold mb-8">
+          <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
             Bachelors of Engineering from <a href="https://www.infosys.com/" className="text-blue-500">Mumbai University</a>
           </p>
           <div className="mb-8">
@@ -114,7 +114,7 @@ const ListItem: React.FC<{ point: string }> = ({ point }) => {
       <svg className="w-5 h-5 text-purple-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
       </svg>
-      <span className="text-gray-600 dark:text-gray-400">{point}</span>
+      <span className="text-gray-600">{point}</span>
     </li>
   )
 }
