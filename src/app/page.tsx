@@ -1,113 +1,101 @@
-import Image from "next/image";
+'use client'
+
+import { Github, Linkedin, Mail } from 'lucide-react'
+
+import { FloatingDock } from '@/components/FloatingDock'
+import { BackgroundBeamsWithCollision } from '@/components/HeroBackground'
+import Navbar from './Navbar'
+import EducationExperience from './Education-Experience'
+import { ProjectBlogs } from "./Project_Blogs";
+import Skills from "./Skills";
+
+const links = [
+  {
+    title: "Mail",
+    icon: (
+      <Mail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "mailto:your.nihir10dec@gmail.com",
+  },
+
+  {
+    title: "LinkedIn",
+    icon: (
+      <Linkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "https://www.linkedin.com/in/nihir-shah",
+  },
+  {
+    title: "GitHub",
+    icon: (
+      <Github className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "https://github.com/nihir10dec",
+  },
+];
 
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 text-gray-800">
+      <Navbar />
+
+      {/* Hero Section */}
+      <section id="about" className="min-h-screen pt-16 relative overflow-hidden">
+
+        <BackgroundBeamsWithCollision>
+          <h2 className="text-2xl relative z-20 font-bold text-center text-black dark:text-white font-sans tracking-tight">
+
+            <div className="relative mx-auto md:text-4xl lg:text-7xl inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
+              <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 hover:from-pink-500 hover:via-violet-500 hover:to-purple-500 transition-colors duration-300 ease-in-out [text-shadow:0_0_rgba(0,0,0,0.1)]">
+                <span className="">Nihir Shah</span>
+              </div>
+              <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 hover:from-pink-500 hover:via-violet-500 hover:to-purple-500 transition-colors duration-300 ease-in-out py-4">
+                <span className="">Nihir Shah</span>
+              </div>
+            </div>
+
+            {/* <div className="md:text-2xl lg:text-5xl">Senior Software Engineer</div> */}
+            <div className="md:text-2xl lg:text-5xl text-purple-700 dark:text-purple-300 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300 mt-4">Senior Software Engineer</div>
+            <div className="md:text-xl lg:text-3xl text-indigo-600 dark:text-indigo-300 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-300 mt-2">React JS, Node JS, AWS</div>
+
+
+          </h2>
+        </BackgroundBeamsWithCollision>
+
+      </section>
+
+      {/* Education & Experience Section */}
+      <section id="experience" className="min-h-screen py-8 flex items-center bg-gradient-to-br from-purple-100 via-indigo-100 to-blue-100">
+        <EducationExperience />
+      </section>
+
+      {/* Projects & Blogs Section */}
+      <section id="projects" className="min-h-screen py-16 flex items-center bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100">
+        <ProjectBlogs />
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="min-h-screen py-16 flex items-center bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100">
+
+        <div className="container mx-auto px-4">
+          <Skills />
         </div>
-      </div>
+      </section>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* Footer */}
+      <footer className="bg-indigo-800 text-white py-8">
+        <div className="container mx-auto px-4 text-center">
+          <p>&copy; {new Date().getFullYear()} Nihir Shah. All rights reserved.</p>
+          <div className="mt-4 flex justify-center space-x-4">
+            <FloatingDock
+              items={links}
+            />
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
 }
+
