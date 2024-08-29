@@ -22,7 +22,7 @@ const blogs: Blog[] = [
     excerpt: "We’ll cover how to actually integrate it into your React project and the functions we can use to make it functional.",
     date: "2023-10-11",
     readTime: "2 min read",
-    image: "https://blogs.demandhelm.com/wp-content/uploads/2024/07/cognitoReact-1.jpg",
+    image: "/cognito-react.avif",
     link: "https://blogs.demandhelm.com/enhancing-react-projects-with-aws-cognito-interation/"
   },
   {
@@ -31,7 +31,7 @@ const blogs: Blog[] = [
     excerpt: "We will delve into the process of creating a User Pool in AWS Cognito",
     date: "2023-10-06",
     readTime: "4 min read",
-    image: "https://blogs.demandhelm.com/wp-content/uploads/2024/07/userPool.webp",
+    image: "/user-pool.png",
     link: "https://blogs.demandhelm.com/aws-cognito-user-pool-creation/"
   },
   {
@@ -40,7 +40,7 @@ const blogs: Blog[] = [
     excerpt: "Amazon Cognito, a serverless authentication service for our applications. With Cognito, there’s no need to manage any databases or servers to handle user data and authentication workflows",
     date: "2023-09-22",
     readTime: "4 min read",
-    image: "https://miro.medium.com/v2/resize:fit:100/0*LKaUacmufYcOUZ1w.jpeg",
+    image: "/amazon-cognito.jpg",
     link: "https://blogs.demandhelm.com/aws-cognito-advantages-pricing-insights/"
   },
   {
@@ -49,7 +49,7 @@ const blogs: Blog[] = [
     excerpt: "Microsoft Clarity, a free, data-driven, and powerful analytics tool",
     date: "2023-05-15",
     readTime: "7 min read",
-    image: "https://blogs.demandhelm.com/wp-content/uploads/2024/07/ClarityImage-1.webp",
+    image: "/clarity.png",
     link: "https://blogs.demandhelm.com/microsoft-clarity/"
   },
   {
@@ -58,7 +58,7 @@ const blogs: Blog[] = [
     excerpt: "This is not just an analysis which party has won or lost but focuses on some basic personal details of the candidates stood in Lok Sabha 2019 Elections like",
     date: "2020-10-11",
     readTime: "10 min read",
-    image: "https://miro.medium.com/v2/resize:fit:100/format:webp/0*Dd1dL98h0HiD8Vf4.jpg",
+    image: "/loksabha.webp",
     link: "https://medium.com/@nihir_shah/lok-sabha-2019-candidate-analysis-e56f1f37ac76"
   },
   {
@@ -67,7 +67,7 @@ const blogs: Blog[] = [
     excerpt: "Just send a command to your Telegram Bot to control your Azure Instance",
     date: "2020-08-24",
     readTime: "8 min read",
-    image: "https://miro.medium.com/v2/resize:fit:100/format:webp/1*_7s--yzxEJw4AuSPdxZJcQ.png",
+    image: "https://nihirshah.netlify.app/img/portfolio/azure/azure.jpg",
     link: "https://medium.com/@nihir_shah/managing-azure-instances-with-telegram-bot-using-python-part-2-f9a19923132d"
   },
 ];
@@ -266,9 +266,10 @@ const BlogCard: React.FC<{ blog: Blog }> = ({ blog }) => {
           <Image
             alt={blog.title}
             src={blog.image}
-            className="aspect-square h-full w-full object-cover"
+            className="aspect-square h-full w-full object-contain"
             width='100'
             height='100'
+            unoptimized={true}
           />
         </div>
 
@@ -292,7 +293,7 @@ const BlogCard: React.FC<{ blog: Blog }> = ({ blog }) => {
             </span>
             <Link
               className="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400 rounded-l group relative items-center overflow-hidden"
-              href={blog.link}
+              href={blog.link} target="_blank"
             >
               <span className="absolute -end-full transition-all group-hover:end-4">
                 <svg

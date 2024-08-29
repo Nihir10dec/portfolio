@@ -46,11 +46,12 @@ const EducationExperience = () => {
       content: (
         <div>
           <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
-            Post Graduation Diploma in Advanced Computing from <span className="text-blue-500">CDAC</span>
+            Post Graduation Diploma from <span className="text-blue-500">CDAC</span>
           </p>
           <div className="mb-8">
+            <ListItem point="Specialization: Advanced Computing" />
             <ListItem point="Official percentage: 83.9%" />
-            <ListItem point="Vidyanidhi Infotech, Mumbai" />
+            <ListItem point="Vidyanidhi Infotech (SM VITA), Centre for Development of Advanced Computing (CDAC)" />
           </div>
         </div>
       ),
@@ -64,7 +65,8 @@ const EducationExperience = () => {
           </p>
           <div className="mb-8">
             <ListItem point="Developed and architected an automation script using Python on an automation tool of Infosys, with Sikuli to perform front end automation of daily DBA activities related to user management." />
-            <ListItem point="Enhanced team’s resolution SLA from 98.15% to 98.85% and reduced manual work of ticket solving by 120-man hours per month by solving the tickets through the automated scripts over a period of 8 months." />
+            <ListItem point="Attained team’s target to reduce manual work of ticket solving by 120-man hours per month by automating the process of solving certain set of tickets and following agile methodology." />
+            <ListItem point="Enhanced team’s resolution SLA from 98.25% to 98.85% by solving the tickets through the automated scripts over a period of 8 months." />
           </div>
         </div>
       ),
@@ -93,7 +95,7 @@ const EducationExperience = () => {
           </p>
           <div className="mb-8">
             <ListItem point="Specialization: Computer Science" />
-            <ListItem point="CGPA: 7.91" />
+            <ListItem point="CGPA: 7.91 / 10" />
             <ListItem point="Thakur College of Engineering and Technology (TCET), Mumbai University" />
           </div>
         </div>
