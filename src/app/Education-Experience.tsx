@@ -1,5 +1,6 @@
 import React from "react";
 import { Timeline } from "../components/Timeline";
+import Link from "next/link";
 
 const EducationExperience = () => {
   const data = [
@@ -8,7 +9,7 @@ const EducationExperience = () => {
       content: (
         <div>
           <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
-            Senior Software Engineer at <a className="text-blue-500" href="https://www.demandhelm.com" target="_blank">DemandHelm</a>
+            Senior Software Engineer at <Link className="text-blue-500" href="https://www.demandhelm.com" target="_blank">DemandHelm</Link>
           </p>
           <ul className="list-disc leading-7 pl-5 space-y-1">
             <ListItem point="Revamped the Sign up and Login process of our React app using AWS Cognito & Identity JS, introducing a mandatory TOTP-based Multi-Factor Authentication (MFA) process for enhanced security" />
@@ -28,7 +29,7 @@ const EducationExperience = () => {
       content: (
         <div>
           <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
-            Software Engineer at <a className="text-blue-500" href="https://www.demandhelm.com" target="_blank">DemandHelm</a>
+            Software Engineer at <Link className="text-blue-500" href="https://www.demandhelm.com" target="_blank">DemandHelm</Link>
           </p>
           <ul className="list-disc leading-7 pl-5 space-y-1">
             <ListItem point="Utilized Styled Components, TypeScript and React hooks to develop reusable functional components, translating Figma designs into web pages. Managed global state & API calls with Redux Toolkit(RTK) Query." />
@@ -48,11 +49,11 @@ const EducationExperience = () => {
           <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
             Post Graduation Diploma from <span className="text-blue-500">CDAC</span>
           </p>
-          <div className="mb-8">
+          <ul className="list-disc leading-7 pl-5 space-y-1">
             <ListItem point="Specialization: Advanced Computing" />
             <ListItem point="Official percentage: 83.9%" />
             <ListItem point="Vidyanidhi Infotech (SM VITA), Centre for Development of Advanced Computing (CDAC)" />
-          </div>
+          </ul>
         </div>
       ),
     },
@@ -61,13 +62,13 @@ const EducationExperience = () => {
       content: (
         <div>
           <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
-            Systems Engineer at <a href="https://www.infosys.com/" className="text-blue-500">Infosys</a>
+            Systems Engineer at <Link href="https://www.infosys.com/" target="_blank" className="text-blue-500">Infosys</Link>
           </p>
-          <div className="mb-8">
+          <ul className="list-disc leading-7 pl-5 space-y-1">
             <ListItem point="Developed and architected an automation script using Python on an automation tool of Infosys, with Sikuli to perform front end automation of daily DBA activities related to user management." />
             <ListItem point="Attained team’s target to reduce manual work of ticket solving by 120-man hours per month by automating the process of solving certain set of tickets and following agile methodology." />
             <ListItem point="Enhanced team’s resolution SLA from 98.25% to 98.85% by solving the tickets through the automated scripts over a period of 8 months." />
-          </div>
+          </ul>
         </div>
       ),
     },
@@ -77,12 +78,12 @@ const EducationExperience = () => {
       content: (
         <div>
           <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
-            Systems Engineer Trainee at <a href="https://www.infosys.com/" className="text-blue-500">Infosys</a>
+            Systems Engineer Trainee at <Link href="https://www.infosys.com/" target="_blank" className="text-blue-500">Infosys</Link>
           </p>
-          <div className="mb-8">
+          <ul className="list-disc leading-7 pl-5 space-y-1">
             <ListItem point="Developed a project to perform Procurement to Pay (P2P) Automation (Requisition, Invoice, Purchase Order, Supply) using Oracle E-Business Suite." />
             <ListItem point="It included migrating the data from external files to Oracle EBS using SQL Loader, creating Reports on them using Oracle Reports and Oracle Workflow Administrator" />
-          </div>
+          </ul>
         </div>
       ),
     },
@@ -91,13 +92,13 @@ const EducationExperience = () => {
       content: (
         <div>
           <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
-            Bachelors of Engineering from <a href="https://www.infosys.com/" className="text-blue-500">Mumbai University</a>
+            Bachelors of Engineering from <span className="text-blue-500">Mumbai University</span>
           </p>
-          <div className="mb-8">
+          <ul className="list-disc leading-7 pl-5 space-y-1">
             <ListItem point="Specialization: Computer Science" />
             <ListItem point="CGPA: 7.91 / 10" />
             <ListItem point="Thakur College of Engineering and Technology (TCET), Mumbai University" />
-          </div>
+          </ul>
         </div>
       ),
     },
