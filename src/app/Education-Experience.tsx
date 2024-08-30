@@ -16,7 +16,7 @@ const EducationExperience = () => {
             <ListItem point="Implemented Code Splitting and Lazy Loading with React Suspense, significantly reducing initial load time." />
             <ListItem point="Created a private NPM library using GitHub packages for our shared components & utilities, enabling consistent usage across multiple repositories. Added Storybook, Chromatic and Vitest for TDD." />
             <ListItem point="Developed a secure, internal company use, conversational AI Chatbot, inspired by ChatGPT, utilizing GPT-4 APIs, with Google authentication for access control on React JS. Deployed it using AWS Amplify." />
-            <ListItem point="Created Table component using TanStack Table which can be resized, searchable, sorted & paginated. Also added Virtualization to enhance performance by rendering only visible rows and avoiding over-allocation of DOM nodes." />
+            <ListItem point="Created Table component using TanStack Table which can be resized, searchable, sorted & paginated. Added Virtualization to enhance performance by rendering only visible rows & avoiding over-population of DOM." />
             <ListItem point="Utilized Lighthouse & Profiler to optimize performance bottlenecks, improving the overall efficiency. Migrated our landing page from React JS to Next JS, improving performance, Web Vitals and SEO optimization." />
             <ListItem point="Crafted pages for initiating new Amazon campaigns. Implemented custom hooks to generate the body to be sent to Amazon. Employed React Hook Form in conjunction with Zod for form validations and error handling." />
           </ul>
@@ -37,7 +37,7 @@ const EducationExperience = () => {
             <ListItem point="Led the implementation of Flagsmith (Feature Flags), Google Analytics and Microsoft Clarity for analytics." />
             <ListItem point="Implemented an Error Boundary to manage edge cases, presenting distinct error pages according to errors." />
             <ListItem point="Contributed to upgrading from Webpack to Vite, React v14 to v18, TSLint to ESLint, Moment to Date-fns, etc." />
-            <ListItem point="Developed a mobile App as POC using React Native that supported login feature. Integrated Expo Push Notification service to trigger notifications to registered users on the app whenever data was dumped into AWS S3." />
+            <ListItem point="Developed mobile App using React Native (POC) with login feature. Integrated Expo Push Notification service to trigger notifications to registered users on the app whenever data was received in AWS S3." />
           </ul>
         </div>
       ),

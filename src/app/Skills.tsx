@@ -55,7 +55,7 @@ export default function Skills() {
               <div className="relative w-32 h-32">
                 <svg className="w-full h-full" viewBox="0 0 100 100">
                   <circle
-                    className="text-gray-200"
+                    className="text-gray-400"
                     strokeWidth="10"
                     stroke="currentColor"
                     fill="transparent"
@@ -74,7 +74,11 @@ export default function Skills() {
                     strokeDasharray={`${2 * Math.PI * 45}`}
                     strokeDashoffset={`${2 * Math.PI * 45 * (1 - skill.level / 100)}`}
                     strokeLinecap="round"
-                    style={{ transition: 'stroke-dashoffset 0.5s ease-in-out' }}
+                    style={{
+                      transition: 'stroke-dashoffset 0.5s ease-in-out',
+                      transform: 'rotate(-90deg)',
+                      transformOrigin: 'center'
+                    }}
                   />
                 </svg>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -92,7 +96,7 @@ export default function Skills() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.8 }}
-                      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-full"
+                      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 rounded-full"
                     >
                       <span className="text-white font-bold text-2xl">{skill.level}%</span>
                     </motion.div>

@@ -87,7 +87,7 @@ const projects: Project[] = [
     title: "Portfolio",
     description: "Old Portfolio project",
     image: "/portfolio-old.gif",
-    tags: ["HTML", "CSS",],
+    tags: ["HTML", "CSS", "Portfolio"],
     link: "https://nihirshah.netlify.app/"
   },
   {
@@ -233,7 +233,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             translateZ={20}
             as="button"
             onClick={() => window.open(project.link)}
-            className="px-4 py-2 rounded-xl bg-black text-white text-xs font-bold"
+            className="px-4 py-2 rounded-xl text-xs font-bold
+            bg-gradient-to-r from-purple-500 via-indigo-600 to-pink-500 text-white hover:from-purple-600 hover:via-indigo-700 hover:to-pink-600"
           >
             Learn More
           </CardItem>
@@ -292,7 +293,9 @@ const BlogCard: React.FC<{ blog: Blog }> = ({ blog }) => {
               {blog.readTime}
             </span>
             <Link
-              className="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400 rounded-l group relative items-center overflow-hidden"
+              className="block px-5 py-3 text-center text-xs font-bold uppercase 
+              bg-gradient-to-r from-purple-500 via-indigo-600 to-pink-500 text-white hover:from-purple-600 hover:via-indigo-700 hover:to-pink-600
+              rounded-l group relative items-center overflow-hidden"
               href={blog.link} target="_blank"
             >
               <span className="absolute -end-full transition-all group-hover:end-4">
