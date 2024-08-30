@@ -15,7 +15,7 @@ const links = [
     icon: (
       <Mail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "mailto:your.nihir10dec@gmail.com",
+    href: "mailto:nihir10dec@gmail.com",
   },
 
   {
