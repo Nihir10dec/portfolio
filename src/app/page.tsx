@@ -6,8 +6,9 @@ import { FloatingDock } from '@/components/FloatingDock'
 import { BackgroundBeamsWithCollision } from '@/components/HeroBackground'
 import Navbar from './Navbar'
 import EducationExperience from './Education-Experience'
-import { ProjectBlogs } from "./Project_Blogs";
+import { Projects } from "./Projects";
 import Skills from "./Skills";
+import { Blogs } from './Blogs'
 
 const links = [
   {
@@ -70,9 +71,13 @@ export default function Home() {
         <EducationExperience />
       </section>
 
-      {/* Projects & Blogs Section */}
+      {/* Projects Section */}
       <section id="projects" className="min-h-screen py-16 flex items-center bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100">
-        <ProjectBlogs />
+        <Projects />
+      </section>
+      {/* Blogs Section */}
+      <section id="blogs" className="min-h-screen py-16 flex items-center bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100">
+        <Blogs />
       </section>
 
       {/* Skills Section */}
