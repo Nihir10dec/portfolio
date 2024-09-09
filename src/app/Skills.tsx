@@ -41,7 +41,7 @@ export default function Skills() {
     <section className="min-h-screen py-16 ">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Skills</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-8">
           {SkillsList.map((skill, index) => (
             <motion.div
               key={skill.name}
@@ -52,7 +52,7 @@ export default function Skills() {
               onMouseEnter={() => setHoveredSkill(skill)}
               onMouseLeave={() => setHoveredSkill(null)}
             >
-              <div className="relative w-20 h-20 md:w-32 md:h-32 xl:w-44 xl:h-44">
+              <div className="relative w-20 h-20 md:w-32 md:h-32 xl:w-40 xl:h-40">
                 <svg className="w-full h-full" viewBox="0 0 100 100">
                   <circle
                     className="text-gray-400"
