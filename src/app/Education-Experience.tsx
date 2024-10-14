@@ -26,7 +26,20 @@ const ListItem: React.FC<{ point: string }> = ({ point }) => {
 
 const data = [
   {
-    title: "Jan 2023",
+    title: "From Oct 2024",
+    content: (
+      <div>
+        <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">
+          Senior Manager at <Link className="text-blue-500" href="https://www.kotaksecurities.com/" target="_blank">Kotak Securities</Link>
+        </p>
+        <ul className="list-disc leading-5 pl-0 sm:leading-7 sm:pl-5 space-y-1">
+          <ListItem point="Yet to do anything substantial 😅" />
+        </ul>
+      </div>
+    ),
+  },
+  {
+    title: "Jan 2023 - Sept 2024",
     content: (
       <div>
         <p className="text-neutral-800 text-4xl md:text-2xl font-semibold mb-8">

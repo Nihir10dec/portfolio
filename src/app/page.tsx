@@ -49,16 +49,16 @@ export default function Home() {
 
             <div className="relative mx-auto md:text-4xl lg:text-7xl inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
               <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 hover:from-pink-500 hover:via-violet-500 hover:to-purple-500 transition-colors duration-300 ease-in-out [text-shadow:0_0_rgba(0,0,0,0.1)]">
-                <span className="">Nihir Shah</span>
+                <span className="">Nihir Praful Shah</span>
               </div>
               <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 hover:from-pink-500 hover:via-violet-500 hover:to-purple-500 transition-colors duration-300 ease-in-out py-4">
-                <span className="">Nihir Shah</span>
+                <span className="">Nihir Praful Shah</span>
               </div>
             </div>
 
             {/* <div className="md:text-2xl lg:text-5xl">Senior Software Engineer</div> */}
-            <div className="md:text-2xl lg:text-5xl text-purple-700 dark:text-purple-300 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300 mt-4">Senior Software Engineer</div>
-            <div className="md:text-xl lg:text-3xl text-indigo-600 dark:text-indigo-300 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-300 mt-2">React JS, Node JS, AWS</div>
+            <div className="md:text-2xl lg:text-5xl text-purple-700 dark:text-purple-300 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300 mt-4">Senior Manager at Kotak Securities</div>
+            <div className="md:text-xl lg:text-3xl text-indigo-600 dark:text-indigo-300 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-300 mt-2">(React JS, Node JS, AWS)</div>
 
 
           </h2>

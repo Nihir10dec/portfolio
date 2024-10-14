@@ -8,15 +8,15 @@ const metadataBase = new URL('https://nihir-shah.netlify.app');
 
 export const metadata: Metadata = {
   title: "Nihir Shah",
-  description: "Senior Software Engineer at DemandHelm. React JS, Node JS, AWS",
+  description: "Senior Manager at Kotak Securities. React JS, Node JS, AWS. Ex DemandHelm, Infosys Ltd.",
   authors: [{ name: 'Nihir Shah', url: metadataBase }],
-  keywords: ['Nihir', 'Nihir Shah', 'Nihir Praful Shah', 'DemandHelm', 'Senior Software Engineer', 'React JS', 'Node JS', 'Next JS'],
+  keywords: ['Nihir', 'Nihir Shah', 'Nihir Praful Shah', 'Kotak Securities', 'Senior Manager', 'DemandHelm', 'Senior Software Engineer', 'React JS', 'Node JS', 'Next JS', 'AWS', 'Infosys'],
   creator: 'Nihir Shah',
   category: 'Portfolio',
   icons: new URL('/Nihir.jpg', metadataBase),
   twitter: {
     title: 'Nihir Shah',
-    description: "Senior Software Engineer at DemandHelm. React JS, Node JS, AWS",
+    description: "Senior Manager at Kotak Securities. React JS, Node JS, AWS. Ex DemandHelm, Infosys Ltd.",
     images: {
       url: new URL('/Nihir.jpg', metadataBase), // Resolves to https://your-domain.com/path-to-your-image.jpg
     },
