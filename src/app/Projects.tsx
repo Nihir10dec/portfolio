@@ -13,6 +13,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 7,
+    title: "Custom Wordle",
+    description: "A fun guessing game like Wordle but with different categories and hints",
+    image: "/custom-wordle.png",
+    tags: ["NextJS", "ReactJS", "Tailwind CSS", "Vercel"],
+    link: "https://custom-wordle-tau.vercel.app/"
+  },
+  {
     id: 1,
     title: "Portfolio",
     description: "Old Portfolio project",
@@ -28,14 +36,14 @@ const projects: Project[] = [
     tags: ["Microsoft Azure", "Python", "Telegram", "pyTelegramBotAPI",],
     link: "https://medium.com/@nihir_shah/managing-azure-instances-with-telegram-bot-using-python-part-2-f9a19923132d"
   },
-  {
-    id: 3,
-    title: "Currency Exchange Rates",
-    description: "A simple website for checking currency exchange rates.",
-    image: "https://nihirshah.netlify.app/img/portfolio/currex/currex.png",
-    tags: ["React JS", "Material UI", "AlphaVantage API"],
-    link: "https://currencyexchangerates.netlify.app/"
-  },
+  // {
+  //   id: 3,
+  //   title: "Currency Exchange Rates",
+  //   description: "A simple website for checking currency exchange rates.",
+  //   image: "https://nihirshah.netlify.app/img/portfolio/currex/currex.png",
+  //   tags: ["React JS", "Material UI", "AlphaVantage API"],
+  //   link: "https://currencyexchangerates.netlify.app/"
+  // },
   {
     id: 4,
     title: "Lok Sabha 2019 Candidate Analysis",
@@ -67,14 +75,14 @@ export const Projects = () => {
   return (
     <div className="container mx-auto px-6">
 
-      <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Projects</h2>
+      <h2 className="text-4xl font-bold text-center text-gray-800">Projects</h2>
 
       {/* Projects Grid */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10"
+        className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5"
       >
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />

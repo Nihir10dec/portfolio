@@ -58,7 +58,7 @@ export default function Home() {
 
             {/* <div className="md:text-2xl lg:text-5xl">Senior Software Engineer</div> */}
             <div className="md:text-2xl lg:text-5xl text-purple-700 dark:text-purple-300 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300 mt-4">Senior Manager at Kotak Securities</div>
-            <div className="md:text-xl lg:text-3xl text-indigo-600 dark:text-indigo-300 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-300 mt-2">(React JS, Node JS, AWS)</div>
+            <div className="md:text-xl lg:text-3xl text-indigo-600 dark:text-indigo-300 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-300 mt-2">(React JS, Next JS, Node JS, AWS)</div>
 
 
           </h2>
